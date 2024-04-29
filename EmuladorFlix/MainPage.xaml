@@ -11,7 +11,7 @@
             <Style x:Key="EstiloComum" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
-                <Setter Property="FontSize" Value="40"/>
+                <Setter Property="FontSize" Value="20"/>
                 <Setter Property="TextColor" Value="White"/>
             </Style>
             <Style x:Key="BotaoCategoria" TargetType="Button" BasedOn="{StaticResource EstiloComum}">
@@ -27,11 +27,11 @@
 
        <Grid RowDefinitions="100,*,*,*,*,*,*,*,*,*,*,*,*,*"
       RowSpacing="10" ColumnSpacing="10" Margin="10"
-      ColumnDefinitions="*">
+      ColumnDefinitions="*"  VerticalOptions="FillAndExpand">
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="pobre" Text="PirataFlix" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Red" FontSize="80"/>
-            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" x:Name="categoria" Text="Categoria de filmes:" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="White" FontSize="40"/>
+            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" x:Name="categoria" Text="Categoria de filmes:" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="White" FontSize="30"/>
 
-            <Button Grid.Row="2" Grid.Column="0" x:Name="aventura" Text="Aventura" Style="{StaticResource BotaoCategoria}" />
+            <Button Grid.Row="2" Grid.Column="0" x:Name="aventura" Text="Aventura" Style="{StaticResource BotaoCategoria}" Clicked="aventura_Clicked" />
             <Button Grid.Row="3" Grid.Column="0" x:Name="comedia" Text="Comedia" Style="{StaticResource BotaoCategoria}" />
             <Button Grid.Row="4" Grid.Column="0" x:Name="drama" Text="Drama" Style="{StaticResource BotaoCategoria}" />
             <Button Grid.Row="5" Grid.Column="0" x:Name="terror" Text="Terror" Style="{StaticResource BotaoCategoria}" />
