@@ -1,8 +1,8 @@
 namespace EmuladorFlix.Categorias;
 
-public partial class acao : ContentPage
+public partial class Acao : ContentPage
 {
-	public acao()
+	public Acao()
 	{
 		InitializeComponent();
 	}

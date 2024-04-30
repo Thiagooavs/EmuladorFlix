@@ -56,7 +56,7 @@
 
         private void acao_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Categorias.acao());
+            Navigation.PushAsync(new Categorias.Acao());
         }
 
         private void nacional_Clicked(object sender, EventArgs e)
