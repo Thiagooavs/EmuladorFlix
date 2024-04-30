@@ -25,7 +25,7 @@
 
     <ContentPage.Content Style="{StaticResource Back}">
 
-       <Grid RowDefinitions="100,*,*,*,*,*,*,*,*,*,*,*,*,*"
+       <Grid RowDefinitions="100,40,*,*,*,*,*,*,*,*,*,*,*"
       RowSpacing="10" ColumnSpacing="10" Margin="10"
       ColumnDefinitions="*"  VerticalOptions="FillAndExpand">
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="pobre" Text="PirataFlix" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Red" FontSize="80"/>
