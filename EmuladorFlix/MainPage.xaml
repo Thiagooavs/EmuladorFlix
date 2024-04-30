@@ -32,17 +32,17 @@
             <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" x:Name="categoria" Text="Categoria de filmes:" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="White" FontSize="30"/>
 
             <Button Grid.Row="2" Grid.Column="0" x:Name="aventura" Text="Aventura" Style="{StaticResource BotaoCategoria}" Clicked="aventura_Clicked" />
-            <Button Grid.Row="3" Grid.Column="0" x:Name="comedia" Text="Comedia" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="4" Grid.Column="0" x:Name="drama" Text="Drama" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="5" Grid.Column="0" x:Name="terror" Text="Terror" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="6" Grid.Column="0" x:Name="ficcao" Text="Ficção Cientifica" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="7" Grid.Column="0" x:Name="suspence" Text="Suspence" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="8" Grid.Column="0" x:Name="infantil" Text="Infantil" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="9" Grid.Column="0" x:Name="animacao" Text="Animação" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="10" Grid.Column="0" x:Name="documentario" Text="Documentário" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="11" Grid.Column="0" x:Name="acao" Text="Ação" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="12" Grid.Column="0" x:Name="nacional" Text="Nacional" Style="{StaticResource BotaoCategoria}" />
-            <Button Grid.Row="13" Grid.Column="0" x:Name="romance" Text="Romance" Style="{StaticResource BotaoCategoria}" />
+            <Button Grid.Row="3" Grid.Column="0" x:Name="comedia" Text="Comedia" Style="{StaticResource BotaoCategoria}" Clicked="comedia_Clicked"/>
+            <Button Grid.Row="4" Grid.Column="0" x:Name="drama" Text="Drama" Style="{StaticResource BotaoCategoria}" Clicked="drama_Clicked"/>
+            <Button Grid.Row="5" Grid.Column="0" x:Name="terror" Text="Terror" Style="{StaticResource BotaoCategoria}" Clicked="terror_Clicked" />
+            <Button Grid.Row="6" Grid.Column="0" x:Name="ficcao" Text="Ficção Cientifica" Style="{StaticResource BotaoCategoria}" Clicked="ficcao_Clicked" />
+            <Button Grid.Row="7" Grid.Column="0" x:Name="suspence" Text="Suspence" Style="{StaticResource BotaoCategoria}" Clicked="suspence_Clicked"/>
+            <Button Grid.Row="8" Grid.Column="0" x:Name="infantil" Text="Infantil" Style="{StaticResource BotaoCategoria}" Clicked="infantil_Clicked" />
+            <Button Grid.Row="9" Grid.Column="0" x:Name="animacao" Text="Animação" Style="{StaticResource BotaoCategoria}" Clicked="animacao_Clicked"/>
+            <Button Grid.Row="10" Grid.Column="0" x:Name="documentario" Text="Documentário" Style="{StaticResource BotaoCategoria}" Clicked="documentario_Clicked"/>
+            <Button Grid.Row="11" Grid.Column="0" x:Name="acao" Text="Ação" Style="{StaticResource BotaoCategoria}" Clicked="acao_Clicked"/>
+            <Button Grid.Row="12" Grid.Column="0" x:Name="nacional" Text="Nacional" Style="{StaticResource BotaoCategoria}" Clicked="nacional_Clicked"/>
+            <Button Grid.Row="13" Grid.Column="0" x:Name="romance" Text="Romance" Style="{StaticResource BotaoCategoria}" Clicked="romance_Clicked"/>
 
         </Grid>
    
