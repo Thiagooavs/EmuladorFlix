@@ -24,6 +24,6 @@ public partial class Animacao : ContentPage
 
     private void injustice_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new Filmes.injustice());
     }
 }
