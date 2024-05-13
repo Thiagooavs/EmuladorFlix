@@ -57,6 +57,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Categorias\filme\**" />
+	  <Compile Remove="Categorias\filme\**" />
+	  <EmbeddedResource Remove="Categorias\filme\**" />
+	  <MauiCss Remove="Categorias\filme\**" />
+	  <MauiXaml Remove="Categorias\filme\**" />
+	  <None Remove="Categorias\filme\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\Aladin.jpg" />
 	  <None Remove="Resources\Images\avatar.jpg" />
 	  <None Remove="Resources\Images\babydrive.png" />
@@ -133,30 +142,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Categorias\Ficcao.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\babydrive.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\doiscaras.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\gato.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\injustice.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\madmax.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\pilpfiction.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\shrekdois.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Filmes\spiderman.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Categorias\Infantil.xaml">

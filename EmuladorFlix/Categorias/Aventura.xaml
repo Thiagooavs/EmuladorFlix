@@ -29,8 +29,8 @@
       RowSpacing="10" ColumnSpacing="10" Margin="10"
       ColumnDefinitions="*,*"  VerticalOptions="FillAndExpand">
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="aventurat" Text="Aventura" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Red" FontSize="60"/>
+
             
-            <Image Source="poster/"
         </Grid>
     </ContentPage.Content>
 </ContentPage>
