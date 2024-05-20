@@ -10,13 +10,13 @@
        RowSpacing="10" ColumnSpacing="10" Margin="10"
        VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Infantil" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Infantil" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
 
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="aladin" BackgroundColor="Black" Source="corra.jpg" Clicked="aladin_Clicked" />
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="scooby" BackgroundColor="Black" Source="luther.jpg" Clicked="scooby_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="incrivelfabrica" BackgroundColor="Black" Source="semsaida.jpg" Clicked='incrivelfabrica_Clicked'/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="up" BackgroundColor="Black" Source="birdbox.jpeg" Clicked="up_Clicked"/>
+                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="aladin" BackgroundColor="Black" Source="aladin.jpg" Clicked="aladin_Clicked" />
+                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="scooby" BackgroundColor="Black" Source="scoobydoo.jpg" Clicked="scooby_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="incrivelfabrica" BackgroundColor="Black" Source="charliechocolate.jpg" Clicked='incrivelfabrica_Clicked'/>
+                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="up" BackgroundColor="Black" Source="up.jpg" Clicked="up_Clicked"/>
 
 
 

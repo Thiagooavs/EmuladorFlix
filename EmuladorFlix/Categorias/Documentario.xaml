@@ -10,7 +10,7 @@
    RowSpacing="10" ColumnSpacing="10" Margin="10"
    VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Documentário" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Documentário" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
 
 
                 <ImageButton Grid.Row="1" Grid.Column="0" x:Name="elena" BackgroundColor="Black" Source="elena.jpg" Clicked="elena_Clicked" />

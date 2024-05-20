@@ -11,13 +11,13 @@
                RowSpacing="10" ColumnSpacing="10" Margin="10"
                VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ficção Científica" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ficção Científica" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
 
 
                 <ImageButton Grid.Row="1" Grid.Column="0" x:Name="mazerunner" BackgroundColor="Black" Source="mazerunner.jpg" Clicked="mazerunner_Clicked" />
                 <ImageButton Grid.Row="1" Grid.Column="1" x:Name="avatar" BackgroundColor="Black" Source="avatar.jpg" Clicked="avatar_Clicked"/>
                 <ImageButton Grid.Row="2" Grid.Column="0" x:Name="doctor" BackgroundColor="Black" Source="doctorwho.jpg" Clicked="doctor_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="interestelar" BackgroundColor="Black" Source="interestelar.jpg" Clicked="interestelar_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="interestelar" BackgroundColor="Black" Source="interestelar.png" Clicked="interestelar_Clicked"/>
 
 
 
