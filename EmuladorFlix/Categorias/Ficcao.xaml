@@ -2,11 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Ficcao"
-             Title="Ficcao">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Ficcao"
+             BackgroundColor="Black">
+    <ContentPage.Content Style="{StaticResource Back}">
+        <ScrollView>
+            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+               RowSpacing="10" ColumnSpacing="10" Margin="10"
+               VerticalOptions="FillAndExpand">
+
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ficção Científica" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+
+
+                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="mazerunner" BackgroundColor="Black" Source="mazerunner.jpg" Clicked="coracaoferro_Clicked" />
+                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="avatar" BackgroundColor="Black" Source="avatar.jpg" Clicked="nadanovo_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="doctor" BackgroundColor="Black" Source="doctorwho.jpg" Clicked='intocaveis_Clicked'/>
+                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="interestelar" BackgroundColor="Black" Source="interestelar.jpg" Clicked="clubluta_Clicked"/>
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

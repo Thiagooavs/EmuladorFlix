@@ -16,7 +16,7 @@
 
                 <ImageButton Grid.Row="1" Grid.Column="0" x:Name="opequenoprincipe" BackgroundColor="Black" Source="pequenoprincipe.jpg" Clicked="opequenoprincipe_Clicked" />
                 <ImageButton Grid.Row="1" Grid.Column="1" x:Name="jumanji" BackgroundColor="Black" Source="jumanji.jpg" Clicked="jumanji_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="kingkong" BackgroundColor="Black" Source="kingkong.jng" Clicked="kingkong_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="kingkong" BackgroundColor="Black" Source="kingkong.jpg" Clicked="kingkong_Clicked"/>
                 <ImageButton Grid.Row="2" Grid.Column="1" x:Name="piratas" BackgroundColor="Black" Source="piratas.jpg" Clicked="piratas_Clicked"/>
 
 

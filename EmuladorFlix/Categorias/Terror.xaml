@@ -2,11 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Terror"
-             Title="Terror">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Terror"
+             BackgroundColor="Black">
+    <ContentPage.Content Style="{StaticResource Back}">
+        <ScrollView>
+            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+   RowSpacing="10" ColumnSpacing="10" Margin="10"
+   VerticalOptions="FillAndExpand">
+
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Terror" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+
+
+                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="itcoisa" BackgroundColor="Black" Source="itcoisa.jpg" Clicked="itcoisa_Clicked" />
+                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="pesadelo" BackgroundColor="Black" Source="pesadelo.jpg" Clicked="pesadelo_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="invocacao" BackgroundColor="Black" Source="invoc.jpg" Clicked="invocacao_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="falecomigo" BackgroundColor="Black" Source="falecomigo.jpg" Clicked="falecomigo_Clicked"/>
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
