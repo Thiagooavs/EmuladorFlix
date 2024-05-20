@@ -2,11 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Nacional"
-             Title="Nacional">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Nacional"
+             BackgroundColor="Black">
+    <ContentPage.Content Style="{StaticResource Back}">
+        <ScrollView>
+            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+               RowSpacing="10" ColumnSpacing="10" Margin="10"
+                 VerticalOptions="FillAndExpand">
+
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Nacional" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+
+
+                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="cidadededeus" BackgroundColor="Black" Source="cidadededeus.jpg" Clicked="cidadededeus_Clicked"/>
+                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="autodacompadecida" BackgroundColor="Black" Source="oaltodacompadecida.jpg" Clicked="autodacompadecida_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="morto" BackgroundColor="Black" Source="mortonaofala.jpg" Clicked="morto_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="tropa" BackgroundColor="Black" Source="tropadeelite.jpg" Clicked="tropa_Clicked"/>
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

@@ -2,11 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Romance"
-             Title="Romance">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Romance"
+              BackgroundColor="Black">
+    <ContentPage.Content Style="{StaticResource Back}">
+        <ScrollView>
+            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+           RowSpacing="10" ColumnSpacing="10" Margin="10"
+             VerticalOptions="FillAndExpand">
+
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Romance" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="80"/>
+
+
+                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="todosmenosvoce" BackgroundColor="Black" Source="todomenosvc.jpg" Clicked="todosmenosvoce_Clicked"/>
+                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="redencao" BackgroundColor="Black" Source="redencao.jpg" Clicked="redencao_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="comoera" BackgroundColor="Black" Source="comoeuera.jpg" Clicked="comoera_Clicked"/>
+                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="umaparede" BackgroundColor="Black" Source="umaparede.jpg" Clicked="umaparede_Clicked"/>
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
