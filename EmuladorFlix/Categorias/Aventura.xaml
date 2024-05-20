@@ -3,25 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Aventura"
              Title="Aventura"
-             BackgroundColor="#1e1e1f">
+             BackgroundColor="black">
 
     <ContentPage.Content Style="{StaticResource Back}">
-        <ScrollView>
-            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
-              RowSpacing="10" ColumnSpacing="10" Margin="10"
+        <Grid RowDefinitions="80, *" ColumnDefinitions="*"
+              RowSpacing="10" Margin="10"
               VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Aventura" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Aventura" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"  BackgroundColor="#1e1e1f" FontFamily="Graphique"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+                <Grid RowDefinitions="300, 300" ColumnDefinitions="*, *"
+              RowSpacing="10" ColumnSpacing="10" Margin="10"  
+              VerticalOptions="FillAndExpand">
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="opequenoprincipe" BackgroundColor="Black" Source="pequenoprincipe.jpg" Clicked="opequenoprincipe_Clicked" />
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="jumanji" BackgroundColor="Black" Source="jumanji.jpg" Clicked="jumanji_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="kingkong" BackgroundColor="Black" Source="kingkong.jpg" Clicked="kingkong_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="piratas" BackgroundColor="Black" Source="piratas.jpg" Clicked="piratas_Clicked"/>
 
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="opequenoprincipe" BackgroundColor="Black" Source="pequenoprincipe.jpg" Clicked="opequenoprincipe_Clicked" />
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="jumanji" BackgroundColor="Black" Source="jumanji.jpg" Clicked="jumanji_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="kingkong" BackgroundColor="Black" Source="kingkong.jpg" Clicked="kingkong_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="piratas" BackgroundColor="Black" Source="piratas.jpg" Clicked="piratas_Clicked"/>
+
+                </Grid>
+            </ScrollView>
+        </Grid>
 
 
-
-            </Grid>
-        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
