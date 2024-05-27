@@ -11,7 +11,7 @@
                RowSpacing="10" ColumnSpacing="10" Margin="10"
                VerticalOptions="FillAndExpand">
 
-            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ficção Científica" TextColor="Red" BackgroundColor="#1e1e1f" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ficção Científica" TextColor="Red" BackgroundColor="#1e1e1f" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="30"/>
 
 
             <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
