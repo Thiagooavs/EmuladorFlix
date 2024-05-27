@@ -5,22 +5,28 @@
              Title="Romance"
               BackgroundColor="Black">
     <ContentPage.Content Style="{StaticResource Back}">
-        <ScrollView>
-            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+
+        <Grid RowDefinitions="80" ColumnDefinitions="*, *"
            RowSpacing="10" ColumnSpacing="10" Margin="10"
              VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Romance" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Romance" TextColor="Red" BackgroundColor="#1e1e1f" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+
+                <Grid RowDefinitions="300, 300" ColumnDefinitions="*, *"
+               RowSpacing="10" ColumnSpacing="10" Margin="10"
+               VerticalOptions="FillAndExpand">
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="todosmenosvoce" BackgroundColor="Black" Source="todomenosvc.png" Clicked="todosmenosvoce_Clicked"/>
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="redencao" BackgroundColor="Black" Source="rendencao.jpg" Clicked="redencao_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="comoera" BackgroundColor="Black" Source="comoeuera.jpg" Clicked="comoera_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="umaparede" BackgroundColor="Black" Source="umaparede.jpg" Clicked="umaparede_Clicked"/>
 
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="todosmenosvoce" BackgroundColor="Black" Source="todomenosvc.png" Clicked="todosmenosvoce_Clicked"/>
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="redencao" BackgroundColor="Black" Source="rendencao.jpg" Clicked="redencao_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="comoera" BackgroundColor="Black" Source="comoeuera.jpg" Clicked="comoera_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="umaparede" BackgroundColor="Black" Source="umaparede.jpg" Clicked="umaparede_Clicked"/>
 
-
-
-            </Grid>
-        </ScrollView>
+                </Grid>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

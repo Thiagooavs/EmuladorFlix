@@ -5,22 +5,28 @@
              Title="Suspence"
              BackgroundColor="Black">
     <ContentPage.Content Style="{StaticResource Back}">
-        <ScrollView>
-            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+
+        <Grid RowDefinitions="80" ColumnDefinitions="*, *"
            RowSpacing="10" ColumnSpacing="10" Margin="10"
            VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Suspense" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Suspense" TextColor="Red" BackgroundColor="#1e1e1f" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+
+                <Grid RowDefinitions="300, 300" ColumnDefinitions="*, *"
+              RowSpacing="10" ColumnSpacing="10" Margin="10"
+              VerticalOptions="FillAndExpand">
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="corra" BackgroundColor="Black" Source="corra.jpg" Clicked="corra_Clicked" />
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="luther" BackgroundColor="Black" Source="luther.jpg" Clicked="luther_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="semsaida" BackgroundColor="Black" Source="semsaida.jpg" Clicked="semsaida_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="birdbox" BackgroundColor="Black" Source="birdbox.jpeg" Clicked="birdbox_Clicked"/>
 
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="corra" BackgroundColor="Black" Source="corra.jpg" Clicked="corra_Clicked" />
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="luther" BackgroundColor="Black" Source="luther.jpg" Clicked="luther_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="semsaida" BackgroundColor="Black" Source="semsaida.jpg" Clicked="semsaida_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="birdbox" BackgroundColor="Black" Source="birdbox.jpeg" Clicked="birdbox_Clicked"/>
 
-
-
-            </Grid>
-        </ScrollView>
+                </Grid>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

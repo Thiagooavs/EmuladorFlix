@@ -5,22 +5,30 @@
              Title="Documentario"
              BackgroundColor="Black">
     <ContentPage.Content Style="{StaticResource Back}">
-        <ScrollView>
-            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+
+        <Grid RowDefinitions="80" ColumnDefinitions="*, *"
    RowSpacing="10" ColumnSpacing="10" Margin="10"
    VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Documentário" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Documentário" TextColor="Red" BackgroundColor="#1e1e1f" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+
+                <Grid RowDefinitions="300, 300" ColumnDefinitions="*, *"
+              RowSpacing="10" ColumnSpacing="10" Margin="10"
+              VerticalOptions="FillAndExpand">
 
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="elena" BackgroundColor="Black" Source="elena.jpg" Clicked="elena_Clicked" />
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="einstein" BackgroundColor="Black" Source="eistenebomba.jpg" Clicked="einstein_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="hitler" BackgroundColor="Black" Source="hitler.jpg" Clicked="hitler_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="wwi" BackgroundColor="Black" Source="segundaguerra.jpg" Clicked="wwi_Clicked"/>
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="elena" BackgroundColor="Black" Source="elena.jpg" Clicked="elena_Clicked" />
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="einstein" BackgroundColor="Black" Source="eistenebomba.jpg" Clicked="einstein_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="hitler" BackgroundColor="Black" Source="hitler.jpg" Clicked="hitler_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="wwi" BackgroundColor="Black" Source="segundaguerra.jpg" Clicked="wwi_Clicked"/>
 
+                </Grid>
 
+            </ScrollView>
 
-            </Grid>
-        </ScrollView>
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>

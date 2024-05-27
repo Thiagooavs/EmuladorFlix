@@ -5,23 +5,28 @@
              Title="Acao"
              BackgroundColor="Black">
     <ContentPage.Content Style="{StaticResource Back}">
-        <ScrollView>
-            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+
+        <Grid RowDefinitions="80, *" ColumnDefinitions="*, *"
               RowSpacing="10" ColumnSpacing="10" Margin="10"
               VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ação" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Ação" TextColor="Red" BackgroundColor="#1e1e1f"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                
+                <Grid RowDefinitions=" 300, 300" ColumnDefinitions="*, *"
+  RowSpacing="10" ColumnSpacing="10" Margin="10"
+  VerticalOptions="FillAndExpand">
 
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="doiscaras" BackgroundColor="Black" Source="doiscaras.jpg" Clicked="doiscaras_Clicked" />
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="pilpfiction" BackgroundColor="Black" Source="pilpfiction.jpg" Clicked="pilpfiction_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="babydrive" BackgroundColor="Black" Source="babydrive.png" Clicked="babydrive_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="madmax" BackgroundColor="Black" Source="madmax.jpg" Clicked="madmax_Clicked"/>
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="doiscaras" BackgroundColor="Black" Source="doiscaras.jpg" Clicked="doiscaras_Clicked" />
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="pilpfiction" BackgroundColor="Black" Source="pilpfiction.jpg" Clicked="pilpfiction_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="babydrive" BackgroundColor="Black" Source="babydrive.png" Clicked="babydrive_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="madmax" BackgroundColor="Black" Source="madmax.jpg" Clicked="madmax_Clicked"/>
+                </Grid>
+            </ScrollView>
+        </Grid>
 
-
-
-            </Grid>
-        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
     

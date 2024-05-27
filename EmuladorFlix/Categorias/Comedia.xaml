@@ -4,23 +4,29 @@
              x:Class="EmuladorFlix.Categorias.Comedia"
              Title="Comedia"
              BackgroundColor="Black">
-     <ContentPage.Content Style="{StaticResource Back}">
-        <ScrollView>
-            <Grid RowDefinitions="120, 300, 300" ColumnDefinitions="*, *"
+    <ContentPage.Content Style="{StaticResource Back}">
+
+        <Grid RowDefinitions="80" ColumnDefinitions="*, *"
             RowSpacing="10" ColumnSpacing="10" Margin="10"
             VerticalOptions="FillAndExpand">
 
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Comédia" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Comédia" TextColor="Red" BackgroundColor="#1e1e1f" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"/>
 
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
 
-                <ImageButton Grid.Row="1" Grid.Column="0" x:Name="gentegrande" BackgroundColor="Black" Source="jentegrande.jpg" Clicked="gentegrande_Clicked" />
-                <ImageButton Grid.Row="1" Grid.Column="1" x:Name="umanoite" BackgroundColor="Black" Source="umanoitenomuseu.jpg" Clicked="umanoite_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="0" x:Name="maskara" BackgroundColor="Black" Source="mascara.jpg" Clicked="maskara_Clicked"/>
-                <ImageButton Grid.Row="2" Grid.Column="1" x:Name="juntomisturado" BackgroundColor="Black" Source="juntos.jpg" Clicked="juntomisturado_Clicked"/>
+                <Grid RowDefinitions="300, 300" ColumnDefinitions="*, *"
+              RowSpacing="10" ColumnSpacing="10" Margin="10"
+              VerticalOptions="FillAndExpand">
 
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="gentegrande" BackgroundColor="Black" Source="jentegrande.jpg" Clicked="gentegrande_Clicked" />
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="umanoite" BackgroundColor="Black" Source="umanoitenomuseu.jpg" Clicked="umanoite_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="maskara" BackgroundColor="Black" Source="mascara.jpg" Clicked="maskara_Clicked"/>
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="juntomisturado" BackgroundColor="Black" Source="juntos.jpg" Clicked="juntomisturado_Clicked"/>
 
+                </Grid>
 
-            </Grid>
-        </ScrollView>
-        </ContentPage.Content>
+            </ScrollView>
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>
