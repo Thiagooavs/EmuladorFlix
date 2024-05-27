@@ -2,11 +2,48 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.aladdin"
-             Title="aladdin">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="aladdin"
+             BackgroundColor="Black"
+             >
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+              ColumnSpacing=" 10" Margin="10" 
+              VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+                     Source="https://www.youtube.com/embed/foyufD52aog"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+                      RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="aladin.jpg" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="24 de maio de 2019" Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="Guy Ritchie" Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text="Aladdin (Mena Massoud) é um jovem ladrão que vive de pequenos roubos em Agrabah. Um dia, ele ajuda uma jovem a recuperar um valioso bracelete, sem saber que ela na verdade é a princesa Jasmine (Naomi Scott). Aladdin logo fica interessado nela, que diz ser a criada da princesa. Ao visitá-la em pleno palácio e descobrir sua identidade, ele é capturado por Jafar (Marwan Kenzari), o grão-vizir do sultanato, que deseja que ele recupere uma lâmpada mágica, onde habita um gênio (Will Smith) capaz de conceder três desejos ao seu dono." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+      
+            </ScrollView> 
+            
+            
+ 
+
+
+        </Grid>
+
+
+
+    </ContentPage.Content>
 </ContentPage>
