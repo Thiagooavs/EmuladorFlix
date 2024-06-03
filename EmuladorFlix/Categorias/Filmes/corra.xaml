@@ -2,11 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.corra"
-             Title="corra">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="corra"
+             BackgroundColor="Black">
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+ColumnSpacing=" 10" Margin="10" 
+VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+       Source="https://www.youtube.com/embed/mDGV5UucTu8"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+        RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="corra.jpg" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="18 de maio de 2017 " Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="Jordan Peele " Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text="Chris (Daniel Kaluuya) é jovem negro que está prestes a conhecer a família de sua namorada branca Rose (Allison Williams). A princípio, ele acredita que o comportamento excessivamente amoroso por parte da família dela é uma tentativa de lidar com o relacionamento de Rose com um rapaz negro, mas, com o tempo, Chris percebe que a família esconde algo muito mais perturbador - e o jeito é tentar escapar.Luther: Luther: O Cair da Noite é a sequência da série 'Luther'. Depois que a série policial britânica Luther comemorou seu final em 2019, Idris Elba retorna mais uma vez como o detetive-chefe inspetor John Luther. Enquanto isso, o tempo passou e Luther está atrás das grades em um grande caso na Londres moderna. Com toda a sua engenhosidade brilhante, ele consegue escapar. No entanto, seu alvo, o implacável assassino em série e psicopata cibernético David Robey (Andy Serkis), está sempre um passo à frente dele. Com um trabalho de detetive nada convencional, sufoca-se um jogo de gato e rato, pelo qual Luther não poupa meios para levar o assassino à justiça. Sob a observação constante de seu superior, o detetive superintendente Dermot Crowley (Martin Schenk), ele constantemente força os limites do trabalho investigativo da polícia." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+            </ScrollView>
+
+
+
+
+
+        </Grid>
+
+
+
+    </ContentPage.Content>
 </ContentPage>
