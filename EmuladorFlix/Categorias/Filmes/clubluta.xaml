@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.clubluta"
-             Title="clubluta">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="clubluta"
+             BackgroundColor="Black">
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+ColumnSpacing=" 10" Margin="10" 
+VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+       Source="https://www.youtube.com/embed/BdJKm16Co6M"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+        RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="luta.jpg" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="29 de outubro de 1999 " Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="David Fincher" Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text="Jack (Edward Norton) é um executivo jovem, trabalha como investigador de seguros, mora confortavelmente, mas ele está ficando cada vez mais insatisfeito com sua vida medíocre. Para piorar ele está enfrentando uma terrível crise de insônia, até que encontra uma cura inusitada para o sua falta de sono ao frequentar grupos de auto-ajuda. Nesses encontros ele passa a conviver com pessoas problemáticas como a viciada Marla Singer (Helena Bonham Carter) e a conhecer estranhos como Tyler Durden (Brad Pitt). Misterioso e cheio de ideias, Tyler apresenta para Jack um grupo secreto que se encontra para extravasar suas angústias e tensões através de violentos combates corporais." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+            </ScrollView>
+
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>

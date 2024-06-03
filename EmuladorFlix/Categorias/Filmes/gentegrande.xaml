@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.gentegrande"
-             Title="gentegrande">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="gentegrande"
+             BackgroundColor="Black">
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+ColumnSpacing=" 10" Margin="10" 
+VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+       Source="https://www.youtube.com/embed/HKVve_VSz58"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+        RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="jentegrande.jpg" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="24 de setembro de 2010  " Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="Dennis Dugan" Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text="Em Gente Grande, Lenny (Adam Sandler), Kurt (Chris Rock), Eric (Kevin James), Marcus (David Spade) e Rob (Rob Schneider) se conhecem desde pequenos. Passados trinta anos, os cinco amigos se reencontram para curtir um fim de semana juntos com as respectivas famílias, mas o feriado de 4 de Julho em uma casa no lago promete muito mais diversão do que apenas lembranças dos bons momentos. Casados e com várias crianças, os homens de família terão de confrontar o fato de não serem mais tão jovens." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+            </ScrollView>
+
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>

@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.falecomigo"
-             Title="falecomigo">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="falecomigo"
+             BackgroundColor="Black">
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+ColumnSpacing=" 10" Margin="10" 
+VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+       Source="https://www.youtube.com/embed/zIt5jSNPxNI"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+        RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="falecoigo.jpg" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="17 de agosto de 2023 " Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text=" Danny Philippou, Michael Philippou" Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text="No terror Fale Comigo, da A24, conjurar espíritos tornou-se a última moda nas festas locais e, procurando uma distração no aniversário de morte da mãe, Mia está determinada a participar da trend. Na trama, acompanhamos o grupo de amigos que encontra uma misteriosa mão embalsamada e descobre que ela permite invocar espíritos. Como é de se esperar, todos ficam muito empolgados com a nova descoberta, mas não demora muito até que a brincadeira tome um rumo extremamente perigoso quando um deles acaba indo longe demais e, por acidente, abre uma porta para o mundo espiritual. Agora, com todos altamente vulneráveis a várias ameaças aterrorizantes, cada um dos amigos será obrigado a lidar com uma difícil escolha, descobrindo em quem devem confiar: nos mortos da outra dimensão ou nos vivos. Protagonizado por Sophie Wilde, Miranda Otto, Alexandra Jensen, Joe Bird, Otis Djanji e Zoe Terakes, o filme é dirigido pela dupla de estreantes em longas-metragens, Danny e Michael Philippou." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+            </ScrollView>
+
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>
