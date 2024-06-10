@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.todosvc"
-             Title="todosvc">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="todosvc"
+             BackgroundColor="Black">
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+ColumnSpacing=" 10" Margin="10" 
+VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+       Source="https://www.youtube.com/embed/NrwlZ6lNVPo"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+        RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="todomenosvc.png" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="25 de janeiro de 2024 " Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="Will Gluck  " Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text=" Baseado no comédia de William Shakespeare, Much Ado About Nothing, Todos Menos Você, é um longa que acompanha Bea (Sydney Sweeney) e Ben (Glen Powell), dois jovens que combinam um encontro após se esbarrarem nos corredores da faculdade em que estudam. Em uma noite quase perfeita, o jovem casal possui tudo para manter o contato: química, uma boa conversa e um incrível desejo um pelo outro. No entanto, o primeiro encontro não passa disso, e a relação de ambos se esfria até pararem de se falar. Anos após a formatura, os dois acabam coincidentemente sendo convidados para o mesmo casamento na Austrália. Longe de casa e dos problemas, os dois acabam fazendo um trato, fingindo ser um casal para todos até o casamento acabar. Mas a tarefa se torna complicada quando os convidados e familiares percebem a antipatia que nutrem um pelo outro, fazendo com que tornem o trabalho mais convincente e os encontros mais frequentes." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+            </ScrollView>
+
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>

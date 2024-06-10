@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmuladorFlix.Categorias.Filmes.umaparede"
-             Title="umaparede">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="umaparede"
+             BackgroundColor="Black">
+
+    <ContentPage.Content style="{StaticResource Back}">
+
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*" 
+ColumnSpacing=" 10" Margin="10" 
+VerticalOptions="FillAndExpand">
+
+            <WebView Grid.Row="0" Grid.Column="0" 
+       Source="https://www.youtube.com/embed/UqqVECvEUlw"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
+        RowSpacing="10" ColumnSpacing="10">
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="cumaparede.jpg" HeightRequest="300"  />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
+                        <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="12 de abril de 2024  " Style="{StaticResource textoTitulo}" TextColor="White" />
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" TextColor="White"/>
+                        <Label Text="Patricia Font  " Style="{StaticResource textoTitulo}" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" TextColor="White" Margin="0, 10, 10, 10" FontSize="20"/>
+                        <Label x:Name="sinopse" Text="Uma Parede Entre Nós apresenta a jovem Valentina (Aitana Ocaña Morales), está em processo para recomeçar sua jornada com o piano, quando descobre que a sua parede fina é colada com a de seu vizinho, David (Fernando Guallar), que odeia barulho. Agora ambos terão de ter mais encontros do que gostariam para resolver esse problema." TextColor="White"/>
+                    </StackLayout>
+
+
+                </Grid>
+
+            </ScrollView>
+
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>
