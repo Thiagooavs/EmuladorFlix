@@ -19,7 +19,7 @@ VerticalOptions="FillAndExpand">
                 <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
         RowSpacing="10" ColumnSpacing="10">
 
-                    <Image Grid.Column="0" Grid.Row="0" Source="babydrive.png" HeightRequest="300"  />
+                    <Image Grid.Column="0" Grid.Row="0" Source="madmax.jpg" HeightRequest="300"  />
                     <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
                         <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
                         <Label Text="14 de maio de 2015  " Style="{StaticResource textoTitulo}" TextColor="White" />
