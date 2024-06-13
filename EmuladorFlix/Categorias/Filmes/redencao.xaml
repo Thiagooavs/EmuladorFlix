@@ -19,7 +19,7 @@ VerticalOptions="FillAndExpand">
                 <Grid RowDefinitions="*, *" ColumnDefinitions="*, *" 
         RowSpacing="10" ColumnSpacing="10">
 
-                    <Image Grid.Column="0" Grid.Row="0" Source="redencao.jpg" HeightRequest="300"  />
+                    <Image Grid.Column="0" Grid.Row="0" Source="rendencao.jpg" HeightRequest="300"  />
                     <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" >
                         <Label Text="Data de lançamento" Style="{StaticResource titulo}" TextColor="White"/>
                         <Label Text="9 de junho de 2022  " Style="{StaticResource textoTitulo}" TextColor="White" />
